@@ -5,7 +5,10 @@
 }
 
 .profile__avatar {
+    height: 190px;
+    width: 190px;
     margin-right: 20px;
+    border-radius: 8px;
 }
 
 .profile__column {
@@ -15,41 +18,127 @@
 
 .profile__name {
     margin: 0 0 12px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1;
+    color: #212121;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-clamp: 3;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    max-width: 420px;
 }
 
 .profile__description {
     margin: 0;
+    width: 288px;
+    height: 16px;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 500;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    opacity: 70%;
+    color: #212121;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-clamp: 3;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    max-width: 420px;
+
 }
 
 .profile__edit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
     margin-top: auto;
     margin-right: auto;
     opacity: 70%;
     background: none;
     border: none;
     font-size: 16px;
-    font-family: "Poppins";
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.profile__pencil-edit {
+    padding: 0;
+    width: 18.48px;
+    height: 3.21px;
 }
 
 .profile__new-post {
+    display: flex;
+    gap: 8px;
+    min-width: 149px;
+    min-height: 52px;
+    justify-content: center;
+    align-items: center;
     margin-left: auto;
     margin-top: auto;
-    max-width: 149px;
-    max-height: 52px;
     border-radius: 8px;
     border: none;
     padding: 18px 32px;
     background-color: #212121;
-
     color: #fcf5e5;
-    size: 16px;
-    line-height: 16px;
-}
-
-.profile__pencil-edit {
-    
+    line-height: 1;
+    font-weight: 500;
+    font-size: 73px 16px;
 }
 
 .profile__new-plus {
     border: 2px #fcf5e5;
+    width: 12px;
+    height: 12px;
+}
+
+@media screen and (max-width: 627px) {
+    .profile {
+        flex-direction: column;
+        max-width: 288px;
+        align-items: center;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .profile__avatar {
+        margin: 0 0 12px;
+        height: 80px;
+        width: 80px;
+
+    }
+
+    .profile__name {
+        font-size: 20px;
+        margin: 0 0 6px;
+        max-width: 288px;
+    }
+
+    .profile__description {
+        margin: 0 0 32px;
+        padding: 0 16px;
+        max-width: 288px;
+    }
+
+    .profile__column {
+        margin: 0 0 20px;
+    }
+    
+    .profile__new-post {
+        margin: 0;
+    }
+
+    .profile__edit {
+        margin: 0;
+    }
+
+    .profile__new-post {
+        width: 288px;
+        height: 52px;
+    }
 }
