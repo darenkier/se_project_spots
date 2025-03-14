@@ -66,6 +66,10 @@
     font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
+.profile__edit:hover {
+    opacity: 100%;
+}
+
 .profile__pencil-edit {
     padding: 0;
     width: 18.48px;
@@ -89,6 +93,10 @@
     line-height: 1;
     font-weight: 500;
     font-size: 73px 16px;
+}
+
+.profile__new-post:hover {
+    opacity: 80%;
 }
 
 .profile__new-plus {
@@ -116,6 +124,7 @@
     .profile__name {
         font-size: 20px;
         margin: 0 0 6px;
+        padding-left: 20px;
         max-width: 288px;
     }
 
