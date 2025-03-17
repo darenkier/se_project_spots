@@ -1,7 +1,7 @@
 .profile {
     display: flex;
     padding: 34px 0 20px;
-    border-bottom: 1px solid #212121;
+    border-bottom: 1px solid #21212166;
 }
 
 .profile__avatar {
@@ -9,6 +9,7 @@
     width: 190px;
     margin-right: 20px;
     border-radius: 8px;
+    object-fit: cover;
 }
 
 .profile__column {
@@ -34,8 +35,6 @@
 
 .profile__description {
     margin: 0;
-    width: 288px;
-    height: 16px;
     font-size: 16px;
     line-height: 1;
     font-weight: 500;
@@ -64,10 +63,13 @@
     border: none;
     font-size: 16px;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: #21212166;
+    font-weight: 500;
 }
 
 .profile__edit:hover {
     opacity: 100%;
+    cursor: pointer;
 }
 
 .profile__pencil-edit {
@@ -97,10 +99,10 @@
 
 .profile__new-post:hover {
     opacity: 80%;
+    cursor: pointer;
 }
 
 .profile__new-plus {
-    border: 2px #fcf5e5;
     width: 12px;
     height: 12px;
 }
@@ -124,7 +126,6 @@
     .profile__name {
         font-size: 20px;
         margin: 0 0 6px;
-        padding-left: 20px;
         max-width: 288px;
     }
 
@@ -148,6 +149,5 @@
 
     .profile__new-post {
         width: 288px;
-        height: 52px;
     }
 }

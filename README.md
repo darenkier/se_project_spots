@@ -35,7 +35,7 @@ This project showcases my skills and understanding of how @media on css works, w
   
 **Github**
 
-* [Link to the project on Github](https://github.com/darenkier/se_project_spots)
+* [Link to the project on Github](https://darenkier.github.io/se_project_spots/)
 
 **Video Overview**
 * [Link to the Video](https://drive.google.com/file/d/14RGEIHRwMRkAp4xmxFsELYUgq8qBZHMj/view?usp=sharing)
