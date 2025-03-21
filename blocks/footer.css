@@ -1,10 +1,13 @@
 .footer {
    display: flex;
    justify-content: center;
+   padding: 60px 0;
+}
+
+.footer__copyright {
    font-weight: 400;
    font-size: 16px;
    line-height: 1;
    font: #212121;
    opacity: 70%;
-   padding: 60px 0;
 }

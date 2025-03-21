@@ -52,6 +52,7 @@
 }
 
 .profile__edit {
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,7 +64,7 @@
     border: none;
     font-size: 16px;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
-    color: #21212166;
+    color: #212121;
     font-weight: 500;
 }
 
