@@ -68,9 +68,10 @@
 .modal__form-input {
     padding: 16px 12px;
     margin-bottom: 32px;
+    border: 1px solid rgba(33, 33, 33, 0.4);
     border-radius: 8px;
-    border-color: #212121;
     gap: 10px;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
 .modal__save-button {
@@ -85,5 +86,33 @@
 
 .modal__form-input::placeholder {
     font-size: 20px;
+    opacity: 40%
 }
 
+@media screen and (max-width: 627px) {
+    .modal__container {
+        max-width: 300px;
+        padding: 12px;
+    }
+
+    .modal__title {
+        width: 106px;
+        font-size: 20px;
+        margin: 10px 0 34px;
+        margin-bottom: 24px;
+    }
+    .modal__close-button {
+        margin-bottom: 24px;
+        top: 12px;
+        right: 12px;
+        font-size: 20px;
+    }
+
+    .modal__title {
+        font-size: 16px;
+    }
+
+    .modal__save-button {
+        width: 100%;
+    }
+}
