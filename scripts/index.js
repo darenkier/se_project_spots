@@ -16,9 +16,22 @@ const editProfileModal = document.querySelector("#edit-profile-modal");
 const editProfileCloseButton = editProfileModal.querySelector(".modal__close-button");
 
 editProfileButton.addEventListener("click", function () {
-    editProfileButton.classList.add(".modal__is-opened");
+    editProfileModal.classList.add("modal__is-opened");
 });
 
 editProfileCloseButton.addEventListener("click", function () {
-    editProfileButton.classList.remove(".modal__is-opened");
+    editProfileModal.classList.remove("modal__is-opened");
 });
+
+const newPostButton = document.querySelector(".profile__new-post");
+
+const newPostModal = document.querySelector("#new-post-modal");
+const newPostCloseButton = newPostModal.querySelector(".modal__close-button");
+
+newPostButton.addEventListener("click", function() {
+    newPostModal.classList.add("modal__is-opened");
+});
+
+newPostCloseButton.addEventListener("click", function () {
+    newPostModal.classList.remove("modal__is-opened");
+}); 
