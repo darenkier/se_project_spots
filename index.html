@@ -84,16 +84,18 @@
       <div class="modal" id="new-post-modal">
         <div class="modal__container">
         <h2 class="modal__title">New Post</h2>
-        <button type="button" class="modal__close-button">X</button>
+        <button type="button" class="modal__close-button">
+          <img src="./images/close.svg" alt="close-button_image" class="modal__close-image">
+        </button>
         <form class="modal__form">
-          <label for="card-image-input" class="modal__form-description">Image link</label>
+          <label for="card-image-input" class="modal__label">Image link</label>
           <input 
           id="card-image-input" 
           type="text" 
           class="modal__form-input"
            placeholder="Paste a link to the picture" />
 
-          <label for="card-caption-input" class="modal__form-description">Caption</label>
+          <label for="card-caption-input" class="modal__label">Caption</label>
           <input 
           id="card-caption-input" 
           type="text" 
@@ -106,7 +108,9 @@
       <div class="modal" id="edit-profile-modal">
         <div class="modal__container">
         <h2 class="modal__title">Edit Profile</h2>
-        <button type="button" class="modal__close-button">X</button>
+        <button type="button" class="modal__close-button">
+          <img src="./images/close.svg" alt="close-button_image" class="modal__close-image">
+        </button>
         <form class="modal__form">
           <label for="profile-name-input" class="modal__label">Name</label>
           <input 
