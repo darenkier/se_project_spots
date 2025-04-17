@@ -9,10 +9,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    transition: 0.5s ease-in;
 }
 
 .modal__is-opened {
     visibility: visible;
+    opacity: 1;
+    
 }
 
 .modal__container {
@@ -55,7 +59,7 @@
     
 }
 
-.modal__form-description {
+.modal__label {
     padding: 0;
     margin-bottom: 8px;
     color: #212121;
