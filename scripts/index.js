@@ -1,4 +1,4 @@
- /* const initialCards = [
+ const initialCards = [
     { name: "Val Thorens",link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/1-photo-by-moritz-feldmann-from-pexels.jpg" },
     { name: "Restaurant terrace",link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/2-photo-by-ceiline-from-pexels.jpg" },
     { name: "An outdoor cafe",link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/3-photo-by-tubanur-dogan-from-pexels.jpg" },
@@ -8,7 +8,12 @@
 
 ]
 
-console.log(initialCards); */
+initialCards.forEach(function (item) {
+    console.log(item.name, item.link);
+
+});
+
+console.log(initialCards);
 
 const editProfileButton = document.querySelector(".profile__edit");
 const editProfileModal = document.querySelector("#edit-profile-modal");
