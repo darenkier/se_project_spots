@@ -15,6 +15,14 @@ initialCards.forEach(function (item) {
 
 console.log(initialCards);
 
+function openModal(modal) {
+    modal.classList.add("modal__is-opened");
+}
+
+function closeModal(modal) {
+    modal.classList.remove("modal__is-opened");
+}
+
 const editProfileButton = document.querySelector(".profile__edit");
 const editProfileModal = document.querySelector("#edit-profile-modal");
 const editProfileName = document.querySelector(".profile__name");
@@ -28,18 +36,20 @@ editProfileButton.addEventListener("click", function () {
     editProfileNameInput.value = editProfileName.textContent;
     editProfileDescriptionInput.value = editProfileDescription.textContent;
     editProfileModal.classList.add("modal__is-opened");
+    openModal(editProfileModal);
 });
 
 editProfileCloseButton.addEventListener("click", function () {
-    editProfileModal.classList.remove("modal__is-opened");
+    closeModal(editProfileModal);
 });
 
 function handleEditProfileSubmit(evt) {
     evt.preventDefault();
     editProfileName.textContent = editProfileNameInput.value;
     editProfileDescription.textContent = editProfileDescriptionInput.value;
-    editProfileModal.classList.remove("modal__is-opened");
+    closeModal(editProfileModal);
 }
+
 
 editProfileForm.addEventListener("submit", handleEditProfileSubmit);
 
@@ -51,18 +61,18 @@ const newPostCaptionInput = newPostModal.querySelector("#card-caption-input");
 const newPostCloseButton = newPostModal.querySelector(".modal__close-button");
 
 newPostButton.addEventListener("click", function () {
-    newPostModal.classList.add("modal__is-opened");
+    openModal(newPostModal);
 });
 
 newPostCloseButton.addEventListener("click", function () {
-    newPostModal.classList.remove("modal__is-opened");
+    closeModal(newPostModal);
 });
 
 function handleNewPostSubmit(evt) {
     evt.preventDefault();
     console.log(newPostLinkInput.value);
     console.log(newPostCaptionInput.value);
-    newPostModal.classList.remove("modal__is-opened");
+    closeModal(newPostModal);
     newPostAddForm.reset();
 }
 
