@@ -33,48 +33,16 @@
         </section>
         <section class="cards page__section">
           <ul class="cards__list">
-            <li class="card">
-              <img src="./images/val-thorens.svg" alt="" class="card__image"/>
-              <div class="card__content">
-                <h2 class="card__title">Val Thorens</h2>
-                <button type="button" class="card__like-button"></button>
-              </div>
-            </li> 
-            <li class="card">
-              <img src="./images/restaurant-terrace.svg" alt="" class="card__image"/>
-              <div class="card__content">
-                <h2 class="card__title">Restaurant terrace</h2>
-                <button type="button" class="card__like-button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img src="./images/outdoor-cafe.svg" alt="" class="card__image"/>
-              <div class="card__content">
-                <h2 class="card__title">An outdoor cafe</h2>
-                <button type="button" class="card__like-button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img src="./images/bridge.svg" alt="" class="card__image"/>
-              <div class="card__content">
-                <h2 class="card__title">A very long bridge, over the forest...</h2>
-                <button type="button" class="card__like-button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img src="./images/tunnel.svg" alt="" class="card__image"/>
-              <div class="card__content">
-                <h2 class="card__title">Tunnel with morning light</h2>
-                <button type="button" class="card__like-button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img src="./images/mountain-house.svg" alt="" class="card__image"/>
-              <div class="card__content">
-                <h2 class="card__title">Mountain house</h2>
-                <button type="button" class="card__like-button"></button>
-              </div>
-            </li>
+            <template id="card-template">
+              <li class="card">
+                <button class="card__delete-button" type="button"></button>
+                <img src="" alt="" class="card__image"/>
+                <div class="card__content">
+                  <h2 class="card__title"></h2>
+                  <button type="button" class="card__like-button"></button>
+                </div>
+              </li>
+            </template>
           </ul>
         </section>
       </main>
@@ -85,19 +53,17 @@
         <div class="modal__container">
         <h2 class="modal__title">New Post</h2>
         <button type="button" class="modal__close-button">
-          <img src="./images/close.svg" alt="close-button_image" class="modal__close-image">
         </button>
         <form class="modal__form">
           <label for="card-image-input" class="modal__label">Image link</label>
           <input 
           id="card-image-input" 
-          type="text" 
+          type="url" 
           class="modal__form-input"
            placeholder="Paste a link to the picture" />
-
           <label for="card-caption-input" class="modal__label">Caption</label>
           <input 
-          id="card-caption-input" 
+          id="card-caption-input"
           type="text" 
           class="modal__form-input" 
           placeholder="Type your caption" />
@@ -105,11 +71,21 @@
         </form>
         </div>
       </div>
+
+      <div class="modal" id="preview-modal">
+        <div class="modal__image-container">
+        <button type="button" class="modal__preview_close"></button>
+        <img src="a" 
+        alt="" 
+        class="modal__image"/>
+        <p class ="modal__caption"></p>
+        </div>
+      </div>
+
       <div class="modal" id="edit-profile-modal">
         <div class="modal__container">
         <h2 class="modal__title">Edit Profile</h2>
         <button type="button" class="modal__close-button">
-          <img src="./images/close.svg" alt="close-button_image" class="modal__close-image">
         </button>
         <form class="modal__form">
           <label for="profile-name-input" class="modal__label">Name</label>
