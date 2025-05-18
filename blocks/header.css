@@ -1,12 +1,15 @@
 .header {
-    background-color: #fff;
-    padding: 10px 0;
     display: flex;
     justify-content: center;
+
+    padding: 10px 0; 
+
+    background-color: #fff;
 }
 
 .header__logo {
-    margin: 0 auto;
     width: 94px;
     height: 26px;
+    
+    margin: 0 auto;    
 }

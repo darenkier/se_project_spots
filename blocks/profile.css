@@ -1,15 +1,18 @@
 .profile {
     display: flex;
     padding: 34px 0 20px;
+
     border-bottom: 1px solid #21212166;
 }
 
 .profile__avatar {
+    object-fit: cover;
     height: 190px;
     width: 190px;
+
     margin-right: 20px;
     border-radius: 8px;
-    object-fit: cover;
+
 }
 
 .profile__column {
@@ -18,54 +21,63 @@
 }
 
 .profile__name {
+    max-width: 420px;    
     margin: 0 0 12px;
+    overflow: hidden;
+
+    color: #212121;
+
+    text-overflow: ellipsis;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-size: 32px;
     line-height: 1;
-    color: #212121;
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
-    text-overflow: ellipsis;
-    overflow: hidden;
     line-clamp: 3;
+
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
-    max-width: 420px;
+
 }
 
 .profile__description {
+    max-width: 420px;    
     margin: 0;
-    font-size: 16px;
-    line-height: 1;
-    font-weight: 500;
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
-    opacity: 70%;
-    color: #212121;
-    text-overflow: ellipsis;
     overflow: hidden;
+
+    color: #212121;    
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
     line-clamp: 3;
+    text-overflow: ellipsis;
+
+    opacity: 70%;
+
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
-    max-width: 420px;
-
 }
 
 .profile__edit {
-    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+
     margin-top: auto;
     margin-right: auto;
+    padding: 0;
+    gap: 8px;
     opacity: 70%;
+
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;   
     background: none;
     border: none;
-    font-size: 16px;
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
     color: #212121;
-    font-weight: 500;
+
 }
 
 .profile__edit:hover {
@@ -81,21 +93,24 @@
 
 .profile__new-post {
     display: flex;
-    gap: 8px;
-    min-width: 149px;
-    min-height: 52px;
     justify-content: center;
     align-items: center;
     margin-left: auto;
     margin-top: auto;
-    border-radius: 8px;
-    border: none;
     padding: 18px 32px;
+
+    gap: 8px;
+    min-width: 149px;
+    min-height: 52px;
+
     background-color: #212121;
-    color: #fcf5e5;
-    line-height: 1;
+    color: #fcf5e5;    
     font-weight: 500;
     font-size: 73px 16px;
+    line-height: 1;
+
+    border-radius: 8px;
+    border: none;
 }
 
 .profile__new-post:hover {

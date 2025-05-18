@@ -11,6 +11,12 @@
     border-radius: 8px;
     object-fit: cover;
     display: block;
+
+    cursor: pointer;
+}
+
+.card__image:hover {
+    border-style: solid;
 }
 
 .card__content {
