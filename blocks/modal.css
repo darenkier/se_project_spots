@@ -64,29 +64,13 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 120%;
-
-
-
-
-    
 }
 
 .modal__preview_close {
-    position: absolute;
-    top: 0;
-    right: -52.5px;
-    width: 40px;
-    height: 40px;
+    top: 0 !important;
+    right: -52.5px !important;
 
-    padding: 0;
-    margin: 0;
-
-
-    background-image: url(../images/preview-close.svg);
-    background-color: transparent;
-    background-position: center;
-    border: none;
-    transition: 0.3s;    
+    background-image: url(../images/preview-close.svg) !important;
 }
 
 .modal__preview_close:hover {
@@ -203,6 +187,11 @@
         position: relative;
         bottom: 8px;
         left: 246px;
+        margin: 0 !important;
+    }
+
+    .modal__caption {
+        font-size: 16px;
     }
 
     .modal__container {
