@@ -71,10 +71,12 @@
     right: -52.5px !important;
 
     background-image: url(../images/preview-close.svg) !important;
+    opacity: 100% !important;
+
 }
 
 .modal__preview_close:hover {
-    opacity: 40%;
+    opacity: 40% !important;
 }
 
 .modal__close-button {
